@@ -27,23 +27,31 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
 
 ## ✨ Key Features & Capabilities
 
-### 1. 🤖 Multi-Model Comparative Chat
+### 1. 🤖 Multi-Model Comparative Chat & Smart Mode
 *   **Parallel Execution Comparison**: Query multiple AI models at once and view their responses side-by-side inside high-contrast comparative workspace panels. Ideal for comparing output quality or speed between models.
+*   **Smart Mode (Planner/Coder/Reviewer)**: Toggle Smart Mode to run a multi-stage agentic pipeline. The AI will plan the architecture first, write the code, and perform a security/bug check review automatically.
 *   **Three-Agent Agentic Pipeline**: Deploy a cooperative development workflow where separate models act as the **Planner**, **Coder**, and **Reviewer** sequentially.
     *   *Planner*: Designs the architecture and layout steps.
     *   *Coder*: Writes and modifies the codebase.
     *   *Reviewer*: Inspects security, checks bugs, and suggests styling/performance enhancements.
 
 <p align="center">
-  <img src="assets/model_comparison.png" alt="ARIA IDE Multi-Model Comparative Chat" width="100%" />
+  <img src="assets/model_comparison.png" alt="ARIA IDE Multi-Model Comparative Chat" width="49%" />
+  <img src="assets/smart_mode.png" alt="Smart Mode Chat" width="49%" />
 </p>
 
-### 2. ⚙️ Connect Provider Popup Overlay
-*   Search and connect from over 100+ pre-configured AI providers (OpenAI, Anthropic, DeepSeek, Google Gemini, Groq, OpenRouter, NVIDIA NIM, and more) or connect custom manual endpoints.
-*   Secure local encryption stores all API keys locally in `helios-settings.json` within your user profile directory. No keys are ever sent to external third-party servers.
+### 2. ⚙️ Connect Provider Popup Overlay & Advanced Settings
+*   **API Providers**: Search and connect from over 100+ pre-configured AI providers (OpenAI, Anthropic, DeepSeek, Google Gemini, Groq, OpenRouter, NVIDIA NIM, and more) or connect custom manual endpoints.
+*   **Model Priorities**: Custom-tune which models are preferred for specific workflows like planning, coding, chatting, or reviewing.
+*   **MCP Servers (Model Context Protocol)**: Connect external MCP servers to extend the AI's capabilities, allowing it to interact directly with databases, external APIs, and local systems.
 
 <p align="center">
-  <img src="assets/settings.png" alt="Helios / ARIA IDE Settings Overlay" width="80%" />
+  <img src="assets/settings.png" alt="Helios / ARIA IDE Settings Overlay" width="49%" />
+  <img src="assets/model_priorities.png" alt="Model Priorities Settings" width="49%" />
+</p>
+
+<p align="center">
+  <img src="assets/mcp_servers.png" alt="MCP Servers Integration" width="80%" />
 </p>
 
 ### 3. 🌀 Dynamic Model Fetching
