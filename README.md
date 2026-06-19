@@ -83,6 +83,11 @@ Follow this step-by-step workflow to get the most out of Helios:
 *   Select your preferred AI provider (e.g., OpenAI, Anthropic, or DeepSeek) and paste your API key.
 *   For local models (Ollama/LM Studio), toggle the Custom Endpoint switch, enter your URL, and Helios will dynamically fetch all active models.
 
+<p align="center">
+  <img src="assets/api_key_setup.png" alt="ARIA IDE API Key Setup" width="80%" />
+</p>
+
+
 ### Step 3: Prompting & Comparative Chat
 *   Open the AI Chat panel (`Ctrl+L`).
 *   Select the AI models you wish to use from the model dropdown.
