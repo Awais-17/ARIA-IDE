@@ -44,8 +44,11 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
 </p>
 
 <p align="center">
-  <img src="assets/model_comparison.png" alt="ARIA IDE Multi-Model Comparative Chat" width="49%" />
-  <img src="assets/smart_mode.png" alt="Smart Mode Chat" width="49%" />
+  <img src="assets/model_comparison.png" alt="ARIA IDE Multi-Model Comparative Chat" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/smart_mode.png" alt="Smart Mode Chat" width="100%" />
 </p>
 
 ### 2. ⚙️ Connect Provider Popup Overlay & Advanced Settings
@@ -58,8 +61,11 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
 </p>
 
 <p align="center">
-  <img src="assets/settings.png" alt="Helios / ARIA IDE Settings Overlay" width="49%" />
-  <img src="assets/model_priorities.png" alt="Model Priorities Settings" width="49%" />
+  <img src="assets/settings.png" alt="Helios / ARIA IDE Settings Overlay" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/model_priorities.png" alt="Model Priorities Settings" width="100%" />
 </p>
 
 <p align="center">
