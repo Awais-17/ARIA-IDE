@@ -190,6 +190,45 @@ No installation or node setup is required! ARIA is distributed as a pre-packaged
 2. Extract the ZIP file's contents to a folder on your computer.
 3. Open the extracted folder `ARIA-win32-x64` and run **`ARIA.exe`** to launch the editor immediately.
 
+
+---
+
+## 🎁 Free & Paid API Provider Guide
+
+To help you get started with zero cost, here are the best ways to obtain free or low-cost API keys to power ARIA IDE:
+
+### 1. 🟢 NVIDIA NIM (Highly Recommended)
+*   **What you get**: Free trial credits upon sign-up, giving access to **120+ state-of-the-art models** (including Llama 3, Gemma 2, Mistral, Nemotron, etc.) with ultra-fast latency.
+*   **How to set up**:
+    1. Visit [build.nvidia.com](https://build.nvidia.com/).
+    2. Log in and generate a single API Key.
+    3. Paste this key into ARIA's **NVIDIA NIM** provider settings to instantly unlock all 120+ models.
+
+### 2. 🟢 OpenRouter (Free + Paid)
+*   **What you get**: A unified API endpoint for almost every model in existence. OpenRouter offers **several high-performance models for 100% free** (like Llama 3 8B, Gemini 1.5 Flash - free tier, etc.) as well as pay-as-you-go access to Claude, GPT-4, and DeepSeek.
+*   **How to set up**:
+    1. Sign up at [openrouter.ai](https://openrouter.ai/).
+    2. Create a key and paste it into ARIA's **OpenRouter** settings.
+
+### 3. 🟢 Groq (High Speed Free Tier)
+*   **What you get**: Instant, blazing-fast access to open-source models (Llama 3 70B/8B, Mixtral 8x7B, Gemma 2) at up to 800 tokens/sec. It has a **generous free tier** with rate limits.
+*   **How to set up**:
+    1. Sign up at [console.groq.com](https://console.groq.com/).
+    2. Go to **API Keys**, generate one, and paste it into ARIA's **Groq** provider settings.
+
+### 4. 🟢 Google Gemini (Free via AI Studio)
+*   **What you get**: Free rate-limited API access to Gemini 1.5 Pro and Gemini 1.5 Flash.
+*   **How to set up**:
+    1. Go to [aistudio.google.com](https://aistudio.google.com/).
+    2. Create an API Key and paste it into ARIA's **Google** provider settings.
+
+### 5. 🟢 Local LLMs (100% Free & Offline)
+*   **What you get**: Run models like Llama 3, Qwen, or Mistral entirely locally on your own graphics card or CPU with absolute privacy and zero cost.
+*   **How to set up**:
+    1. Download [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/).
+    2. Run your preferred model (e.g. `ollama run llama3`).
+    3. In ARIA, open settings, toggle **Custom Endpoint**, enter your local URL (e.g. `http://localhost:11434/v1`), and ARIA will dynamically fetch your local models!
+
 ---
 
 ## 📜 Attribution & Credits
