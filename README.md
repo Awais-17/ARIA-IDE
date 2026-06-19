@@ -36,6 +36,10 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
     *   *Reviewer*: Inspects security, checks bugs, and suggests styling/performance enhancements.
 
 <p align="center">
+  <img src="assets/comparative_flow.svg" alt="Multi-Model Comparative Chat Flow" width="95%" />
+</p>
+
+<p align="center">
   <img src="assets/agent_pipeline.svg" alt="ARIA IDE Agentic Pipeline Animation" width="95%" />
 </p>
 
@@ -48,6 +52,10 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
 *   **API Providers**: Search and connect from over 100+ pre-configured AI providers (OpenAI, Anthropic, DeepSeek, Google Gemini, Groq, OpenRouter, NVIDIA NIM, and more) or connect custom manual endpoints.
 *   **Model Priorities**: Custom-tune which models are preferred for specific workflows like planning, coding, chatting, or reviewing.
 *   **MCP Servers (Model Context Protocol)**: Connect external MCP servers to extend the AI's capabilities, allowing it to interact directly with databases, external APIs, and local systems.
+
+<p align="center">
+  <img src="assets/connection_flow.svg" alt="Secure API Keys & Connections" width="95%" />
+</p>
 
 <p align="center">
   <img src="assets/settings.png" alt="Helios / ARIA IDE Settings Overlay" width="49%" />
