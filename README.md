@@ -70,33 +70,54 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
 
 ---
 
-## 📖 How to Use
+## 📖 How to Use (Step-by-Step Guide)
 
-Follow this step-by-step workflow to get the most out of Helios:
+Follow this detailed workflow to set up, configure, and code with ARIA IDE:
 
-### Step 1: Open Your Project Folder
-*   Click **File > Open Folder...** (or press `Ctrl+Shift+O`) to load your project directory. 
-*   Helios will immediately start indexing your codebase to build a symbol database, which the AI models use as context for workspace queries.
+---
 
-### Step 2: Configure AI Keys
-*   Click the **Settings Gear Icon** in the top-right corner of the title bar to open the **Connect Provider Overlay**.
-*   Select your preferred AI provider (e.g., OpenAI, Anthropic, or DeepSeek) and paste your API key.
-*   For local models (Ollama/LM Studio), toggle the Custom Endpoint switch, enter your URL, and Helios will dynamically fetch all active models.
+### 📂 Step 1: Run the IDE & Open a Workspace
+1. **Launch ARIA**: Extract the `ARIA-Portable.zip` file and double-click **`ARIA.exe`** inside the `ARIA-win32-x64` folder.
+2. **Load Project**: Click **File > Open Folder...** (or press `Ctrl + Shift + O`) and select your project's directory.
+3. **Workspace Indexing**: Once loaded, ARIA starts indexing your codebase. It scans files and functions to build a local context database, which the AI models utilize to provide highly accurate, context-aware answers.
+
+---
+
+### 🔑 Step 2: Configure AI Keys & Custom Endpoints
+1. **Open Settings**: Click the **Settings Gear Icon** in the top-right corner of the header.
+2. **Select Provider**: Choose from the list of 100+ supported AI providers (e.g. OpenAI, Anthropic, Gemini, Groq, DeepSeek).
+3. **Pasting Keys**: Paste your API key in the password field and click **Continue**. Your keys are encrypted and stored safely on your local machine (`helios-settings.json`).
+4. **Local / Custom Models**: If using Ollama or LM Studio, toggle the **Custom Endpoint** switch, paste your local server URL (e.g. `http://localhost:11434/v1`), and ARIA will dynamically fetch all models running on your machine.
 
 <p align="center">
   <img src="assets/api_key_setup.png" alt="ARIA IDE API Key Setup" width="80%" />
 </p>
 
+---
 
-### Step 3: Prompting & Comparative Chat
-*   Open the AI Chat panel (`Ctrl+L`).
-*   Select the AI models you wish to use from the model dropdown.
-*   *For comparative analysis*: Toggle **Compare Mode**, ask your coding question, and view the side-by-side outputs.
-*   *For agentic coding*: Select **Agent Mode** and describe what you want built. The system will plan, write, and review the code automatically.
+### ⚙️ Step 3: Set Model Priorities & MCP Servers (Optional)
+1. **Set Priorities**: Click the **Model Priorities** tab in settings to map specific models to different agent roles. For example, assign `claude-3-5-sonnet` for Coder operations and `gpt-4o` for Planning.
+2. **Connect MCP Servers**: Click the **MCP Servers** tab to add Model Context Protocol endpoints. This integrates external systems (databases, command-line utilities, search APIs) directly into the AI's tool belt.
 
-### Step 4: Edit, Run, and Verify
-*   Open and edit files in the Monaco editor.
-*   To run your active file, press `F5` (or click **Run > Run Active File**). Helios automatically detects your file extension (`.js`, `.py`, `.go`, `.rs`, `.cpp`, `.html`) and executes the proper compile/run command inside the integrated terminal panel.
+---
+
+### 🤖 Step 4: Prompting, Comparative Chat & Smart Mode
+1. **Toggle Chat**: Open the chat sidebar using `Ctrl + L` or clicking the chat icon in the sidebar.
+2. **Select Models**: Use the dropdown at the top of the chat to select your active model(s).
+3. **Comparative Chat**: Click **Compare Mode** to select two models (e.g. Gemini 1.5 Pro vs GPT-4o). Submit your prompt, and watch both models execute and print outputs side-by-side in high-contrast panels.
+4. **Agentic Smart Mode**: Select **Smart Mode** from the bottom selector. Enter your request (e.g., "Add user authorization to my server"). ARIA will deploy a three-stage agent workflow:
+   - **Planner**: Outlines the code changes and architecture.
+   - **Coder**: Modifies files and writes the implementation.
+   - **Reviewer**: Tests, scans for bugs, and validates the styling and security.
+
+---
+
+### 🐚 Step 5: Code Editing & Terminal Verification
+1. **Code with Monaco**: Open any file from the explorer sidebar (`Ctrl + B`) to edit code with full syntax highlighting, brackets matching, and parameter hints.
+2. **Run Code**: Press **`F5`** (or click **Run > Run Active File**). ARIA will automatically identify the programming language (`.js`, `.py`, `.go`, `.rs`, `.cpp`, etc.) and execute the appropriate compilation or run command inside the interactive terminal.
+3. **Manage Processes**: Use the **`STOP PROCESS / RESET`** button in the terminal panel to kill long-running loops or terminate active dev servers.
+
+---
 
 ---
 
