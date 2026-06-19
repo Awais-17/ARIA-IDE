@@ -36,6 +36,10 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
     *   *Reviewer*: Inspects security, checks bugs, and suggests styling/performance enhancements.
 
 <p align="center">
+  <img src="assets/agent_pipeline.svg" alt="ARIA IDE Agentic Pipeline Animation" width="95%" />
+</p>
+
+<p align="center">
   <img src="assets/model_comparison.png" alt="ARIA IDE Multi-Model Comparative Chat" width="49%" />
   <img src="assets/smart_mode.png" alt="Smart Mode Chat" width="49%" />
 </p>
