@@ -197,6 +197,10 @@ No installation or node setup is required! ARIA is distributed as a pre-packaged
 
 To help you get started with zero cost, here are the best ways to obtain free or low-cost API keys to power ARIA IDE:
 
+<p align="center">
+  <img src="assets/providers_logos.svg" alt="ARIA IDE Supported AI Providers" width="95%" />
+</p>
+
 ### 1. 🟢 NVIDIA NIM (Highly Recommended)
 *   **What you get**: Free trial credits upon sign-up, giving access to **120+ state-of-the-art models** (including Llama 3, Gemma 2, Mistral, Nemotron, etc.) with ultra-fast latency.
 *   **How to set up**:
