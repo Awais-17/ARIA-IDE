@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
-**Helios (ARIA - Adaptive Runtime Intelligent Assistant)** is a premium, high-performance, AI-native IDE built from the ground up to integrate deep workspace analysis with state-of-the-art Large Language Models. Featuring a tailored high-contrast dual-dark aesthetic (Pure Black / Deep Charcoal) and micro-animations, Helios makes development faster, more intelligent, and visually immersive. It serves as a fully featured, free desktop alternative to Cursor, Trae, and Claude Code.
+**ARIA - Adaptive Runtime Intelligent Assistant** is a premium, high-performance, AI-native IDE built from the ground up to integrate deep workspace analysis with state-of-the-art Large Language Models. Featuring a tailored high-contrast dual-dark aesthetic (Pure Black / Deep Charcoal) and micro-animations, Helios makes development faster, more intelligent, and visually immersive. It serves as a fully featured, free desktop alternative to Cursor, Trae, and Claude Code.
 
 ---
 
