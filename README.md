@@ -20,7 +20,7 @@
 Helios opens with a fluid start-up animation screen that sets a premium, futuristic tone before seamlessly loading the workspace environment.
 
 <p align="center">
-  <video src="assets/start-animation.mp4" width="100%" controls autoplay loop muted></video>
+  <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/start-animation.mp4" width="100%" controls autoplay loop muted></video>
 </p>
 
 ---
@@ -36,7 +36,7 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
     *   *Reviewer*: Inspects security, checks bugs, and suggests styling/performance enhancements.
 
 <p align="center">
-  <video src="assets/comparison.mp4" width="100%" controls autoplay loop muted></video>
+  <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/comparison.mp4" width="100%" controls autoplay loop muted></video>
 </p>
 
 <p align="center">
@@ -61,7 +61,7 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
 *   **MCP Servers (Model Context Protocol)**: Connect external MCP servers to extend the AI's capabilities, allowing it to interact directly with databases, external APIs, and local systems.
 
 <p align="center">
-  <video src="assets/All features.mp4" width="100%" controls autoplay loop muted></video>
+  <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/All%20features.mp4" width="100%" controls autoplay loop muted></video>
 </p>
 
 <p align="center">
