@@ -35,6 +35,10 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
     *   *Coder*: Writes and modifies the codebase.
     *   *Reviewer*: Inspects security, checks bugs, and suggests styling/performance enhancements.
 
+
+https://github.com/user-attachments/assets/bca239b6-32b9-408a-b0a0-f89609871376
+
+
 <p align="center">
   <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/comparison.mp4" width="100%" controls autoplay loop muted></video>
 </p>
@@ -59,6 +63,10 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
 *   **API Providers**: Search and connect from over 100+ pre-configured AI providers (OpenAI, Anthropic, DeepSeek, Google Gemini, Groq, OpenRouter, NVIDIA NIM, and more) or connect custom manual endpoints.
 *   **Model Priorities**: Custom-tune which models are preferred for specific workflows like planning, coding, chatting, or reviewing.
 *   **MCP Servers (Model Context Protocol)**: Connect external MCP servers to extend the AI's capabilities, allowing it to interact directly with databases, external APIs, and local systems.
+
+
+https://github.com/user-attachments/assets/a3a567d5-72e4-4ae3-b3fb-a40ee9902f40
+
 
 <p align="center">
   <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/All%20features.mp4" width="100%" controls autoplay loop muted></video>
