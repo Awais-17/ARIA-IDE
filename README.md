@@ -1,4 +1,4 @@
-# 🌌 Helios (ARIA IDE) | Premium AI-Native Code Editor
+# 🌌 ARIA IDE | Premium AI-Native Code Editor
 
 <p align="center">
   <img src="assets/workspace.png" alt="Helios / ARIA IDE Workspace Preview" width="100%" />
