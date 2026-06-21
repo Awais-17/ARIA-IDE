@@ -262,3 +262,6 @@ To help you get started with zero cost, here are the best ways to obtain free or
 Created with ❤️ by **Mohammed Awais (AM)**.
 
 *This project is distributed for educational and development purposes. Unauthorized modifications of developer attributions or removal of credit signatures are strictly prohibited by the application's built-in self-defense and integrity mechanisms.*
+
+Copyright (c) 2026 Mohammed Awais Hussain. All Rights Reserved.
+Unauthorized copying, modification, or distribution is prohibited.
