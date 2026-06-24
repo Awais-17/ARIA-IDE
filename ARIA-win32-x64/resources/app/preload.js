@@ -29,6 +29,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
 
     // Terminal
     runTerminalCommand: (command, cwd) => ipcRenderer.invoke('run-terminal-command', command, cwd),
+    executeCommandAndCapture: (command, cwd) => ipcRenderer.invoke('execute-command-and-capture', command, cwd),
     killTerminalCommand: (pid) => ipcRenderer.invoke('kill-terminal-command', pid),
     startTerminalSession: (cwd) => ipcRenderer.invoke('start-terminal-session', cwd),
     sendTerminalInput: (text) => ipcRenderer.invoke('send-terminal-input', text),

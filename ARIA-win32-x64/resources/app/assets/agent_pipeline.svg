@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="auto">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050508"/>
+      <stop offset="100%" stop-color="#0d0e15"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Node Gradients -->
+    <linearGradient id="blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#0066ff"/>
+    </linearGradient>
+
+    <linearGradient id="purple-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <linearGradient id="green-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .node {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .node:hover {
+      transform: scale(1.05);
+    }
+    .flow-line {
+      fill: none;
+      stroke-width: 3;
+      stroke-linecap: round;
+    }
+    .line-blue {
+      stroke: #00d2ff;
+      stroke-dasharray: 10, 15;
+      animation: dash-blue 3s linear infinite;
+    }
+    .line-purple {
+      stroke: #d946ef;
+      stroke-dasharray: 10, 15;
+      animation: dash-purple 3s linear infinite;
+    }
+    .line-green {
+      stroke: #10b981;
+      stroke-dasharray: 10, 15;
+      animation: dash-green 3s linear infinite;
+    }
+    
+    @keyframes dash-blue {
+      to {
+        stroke-dashoffset: -50;
+      }
+    }
+    @keyframes dash-purple {
+      to {
+        stroke-dashoffset: -50;
+      }
+    }
+    @keyframes dash-green {
+      to {
+        stroke-dashoffset: -50;
+      }
+    }
+
+    .title {
+      font-family: 'Outfit', 'Inter', sans-serif;
+      font-weight: 800;
+      fill: #ffffff;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      fill: #94a3b8;
+      font-size: 11px;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="250" rx="16" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Flow Lines (Connectors) -->
+  <!-- Planner to Coder -->
+  <path d="M 230 125 L 370 125" class="flow-line line-blue" filter="url(#glow-blue)" />
+  <!-- Coder to Reviewer -->
+  <path d="M 430 125 L 570 125" class="flow-line line-purple" filter="url(#glow-purple)" />
+  <!-- Reviewer to Planner (Feedback Loop) -->
+  <path d="M 600 100 Q 400 30 200 100" class="flow-line line-green" filter="url(#glow-green)" />
+
+  <!-- Node 1: PLANNER -->
+  <g class="node" transform="translate(100, 65)">
+    <!-- Outer Card -->
+    <rect width="130" height="120" rx="12" fill="#0f172a" stroke="#00d2ff" stroke-width="1.5" filter="url(#glow-blue)" opacity="0.8"/>
+    <!-- Icon Placeholder -->
+    <circle cx="65" cy="40" r="22" fill="url(#blue-grad)"/>
+    <!-- Architecture/Planner Icon Details (Brain-like shape) -->
+    <path d="M 55 40 Q 65 30 75 40 Q 65 50 55 40" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M 65 30 L 65 50" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="65" cy="40" r="3" fill="#ffffff"/>
+    <!-- Text -->
+    <text x="65" y="85" text-anchor="middle" class="title">PLANNER</text>
+    <text x="65" y="102" text-anchor="middle" class="subtitle">Architecture &amp; Steps</text>
+  </g>
+
+  <!-- Node 2: CODER -->
+  <g class="node" transform="translate(335, 65)">
+    <!-- Outer Card -->
+    <rect width="130" height="120" rx="12" fill="#0f172a" stroke="#d946ef" stroke-width="1.5" filter="url(#glow-purple)" opacity="0.8"/>
+    <!-- Icon Placeholder -->
+    <circle cx="65" cy="40" r="22" fill="url(#purple-grad)"/>
+    <!-- Code Bracket Icon -->
+    <path d="M 55 35 L 48 40 L 55 45 M 75 35 L 82 40 L 75 45 M 68 33 L 62 47" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <!-- Text -->
+    <text x="65" y="85" text-anchor="middle" class="title">CODER</text>
+    <text x="65" y="102" text-anchor="middle" class="subtitle">Implementation</text>
+  </g>
+
+  <!-- Node 3: REVIEWER -->
+  <g class="node" transform="translate(570, 65)">
+    <!-- Outer Card -->
+    <rect width="130" height="120" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5" filter="url(#glow-green)" opacity="0.8"/>
+    <!-- Icon Placeholder -->
+    <circle cx="65" cy="40" r="22" fill="url(#green-grad)"/>
+    <!-- Shield Icon -->
+    <path d="M 54 33 Q 65 30 76 33 L 76 43 Q 76 51 65 54 Q 54 51 54 43 Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 61 43 L 64 46 L 70 40" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <!-- Text -->
+    <text x="65" y="85" text-anchor="middle" class="title">REVIEWER</text>
+    <text x="65" y="102" text-anchor="middle" class="subtitle">Bugs &amp; Security Scan</text>
+  </g>
+</svg>

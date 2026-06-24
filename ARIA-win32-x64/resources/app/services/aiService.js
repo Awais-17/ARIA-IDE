@@ -828,24 +828,22 @@ class AIService {
         try {
             for (const modelName of modelsToTry) {
                 try {
-                    let systemPrompt = `
-                        You are ARIA (Adaptive Runtime Intelligent Assistant), an AI Senior Software Engineer.
+                    let systemPrompt = `You are ARIA (Adaptive Runtime Intelligent Assistant), an AI Senior Software Engineer.
 
-                        PROJECT CONTEXT:
-                        - Structure: ${fileStructure}
-                    `;
+PROJECT CONTEXT:
+- Structure: ${fileStructure}`;
 
                     if (repoMap) {
-                        systemPrompt += `\n                    - Repository Map: ${JSON.stringify(repoMap)}`;
+                        systemPrompt += `\n- Repository Map: ${JSON.stringify(repoMap)}`;
                     }
 
                     if (relevantSnippets?.length > 0) {
-                        systemPrompt += `\n                    - Relevant Snippets: ${relevantSnippets
+                        systemPrompt += `\n- Relevant Snippets: ${relevantSnippets
                             .map(s => `File: ${s.filePath}\n${s.text}`)
                             .join('\n---\n')}`;
                     }
 
-                    systemPrompt += `\n                    ACTIVE FILE:\n                    ---\n                    ${currentFileContent}\n                    ---`;
+                    systemPrompt += `\nACTIVE FILE:\n---\n${currentFileContent}\n---`;
 
                     if (mode === 'chat') {
                         systemPrompt += `
@@ -855,6 +853,9 @@ class AIService {
 You are an AI code agent embedded inside an IDE (like Cursor or Trae).
 This IDE has an AUTO-WRITE system that reads your output and writes files to disk automatically.
 The system ONLY works if you follow the exact format below. Any deviation means files will NOT be created.
+
+### RULE 0 — PLAN AND EXPLAIN FIRST:
+Before outputting any [FILE:] or [CMD:] blocks, you MUST write a clear, step-by-step plan and explanation of what you are doing (like the Antigravity assistant). Explain exactly which files you are about to edit or create, the reasoning behind the edits, and what commands you will run to test/build.
 
 ### RULE 1 — ALWAYS use [FILE:] blocks for every file you create or modify:
 
@@ -908,8 +909,7 @@ button { padding: 8px 16px; }
    \`\`\`
 2. Create vite.config.js in your project root...
 
-IMPORTANT: You have full conversation context. Reference previous messages when relevant.
-                        `;
+IMPORTANT: You have full conversation context. Reference previous messages when relevant.`;
                     } else if (mode === 'complete') {
                         systemPrompt = 'You are a code completion engine. Return ONLY the code that follows. No markdown.';
                     } else if (mode === 'inline-edit') {
