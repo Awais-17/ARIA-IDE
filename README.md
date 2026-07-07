@@ -1,4 +1,4 @@
-# 🌌 ARIA IDE | Premium AI-Native Code Editor
+# 🌌 Helios (ARIA IDE) | Premium AI-Native Code Editor
 
 <p align="center">
   <img src="assets/workspace.png" alt="Helios / ARIA IDE Workspace Preview" width="100%" />
@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>
 
-**ARIA - Adaptive Runtime Intelligent Assistant** is a premium, high-performance, AI-native IDE built from the ground up to integrate deep workspace analysis with state-of-the-art Large Language Models. Featuring a tailored high-contrast dual-dark aesthetic (Pure Black / Deep Charcoal) and micro-animations, Helios makes development faster, more intelligent, and visually immersive. It serves as a fully featured, free desktop alternative to Cursor, Trae, and Claude Code.
+**Helios (ARIA - Adaptive Runtime Intelligent Assistant)** is a premium, high-performance, AI-native IDE built from the ground up to integrate deep workspace analysis with state-of-the-art Large Language Models. Featuring a tailored high-contrast dual-dark aesthetic (Pure Black / Deep Charcoal) and micro-animations, Helios makes development faster, more intelligent, and visually immersive. It serves as a fully featured, free desktop alternative to Cursor, Trae, and Claude Code.
 
 ---
 
@@ -20,7 +20,7 @@
 Helios opens with a fluid start-up animation screen that sets a premium, futuristic tone before seamlessly loading the workspace environment.
 
 <p align="center">
-  <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/start-animation.mp4" width="100%" controls autoplay loop muted></video>
+  <video src="assets/start-animation.mp4" width="100%" controls autoplay loop muted></video>
 </p>
 
 ---
@@ -34,14 +34,6 @@ Helios opens with a fluid start-up animation screen that sets a premium, futuris
     *   *Planner*: Designs the architecture and layout steps.
     *   *Coder*: Writes and modifies the codebase.
     *   *Reviewer*: Inspects security, checks bugs, and suggests styling/performance enhancements.
-
-
-https://github.com/user-attachments/assets/bca239b6-32b9-408a-b0a0-f89609871376
-
-
-<p align="center">
-  <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/comparison.mp4" width="100%" controls autoplay loop muted></video>
-</p>
 
 <p align="center">
   <img src="assets/comparative_flow.svg" alt="Multi-Model Comparative Chat Flow" width="95%" />
@@ -63,14 +55,6 @@ https://github.com/user-attachments/assets/bca239b6-32b9-408a-b0a0-f89609871376
 *   **API Providers**: Search and connect from over 100+ pre-configured AI providers (OpenAI, Anthropic, DeepSeek, Google Gemini, Groq, OpenRouter, NVIDIA NIM, and more) or connect custom manual endpoints.
 *   **Model Priorities**: Custom-tune which models are preferred for specific workflows like planning, coding, chatting, or reviewing.
 *   **MCP Servers (Model Context Protocol)**: Connect external MCP servers to extend the AI's capabilities, allowing it to interact directly with databases, external APIs, and local systems.
-
-
-https://github.com/user-attachments/assets/a3a567d5-72e4-4ae3-b3fb-a40ee9902f40
-
-
-<p align="center">
-  <video src="https://github.com/Awais-17/ARIA-IDE/raw/main/assets/All%20features.mp4" width="100%" controls autoplay loop muted></video>
-</p>
 
 <p align="center">
   <img src="assets/connection_flow.svg" alt="Secure API Keys & Connections" width="95%" />
@@ -205,12 +189,36 @@ Helios/
 
 ## 🚀 Getting Started (Portable Release)
 
-No installation or node setup is required! ARIA is distributed as a pre-packaged portable Windows application.
+No installation or node setup is required! ARIA ships as a self-contained portable app — the Electron
+runtime is bundled, so there are **no extra dependencies** to install on the target machine.
 
-### Running the App:
-1. Locate the `ARIA-Portable.zip` file in the root of the repository (or download it).
-2. Extract the ZIP file's contents to a folder on your computer.
-3. Open the extracted folder `ARIA-win32-x64` and run **`ARIA.exe`** to launch the editor immediately.
+### ▶️ Run on Windows 10 / 11 (64-bit)
+1. Download / locate the `ARIA-win32-x64.zip` archive.
+2. Extract it to any folder.
+3. Open the extracted `ARIA-win32-x64` folder and run **`ARIA.exe`**.
+   *(If SmartScreen warns about an unknown publisher, choose **More info → Run anyway**.)*
+
+### 🐧 Run on Linux (64-bit, most modern distros)
+1. Download / locate the `ARIA-linux-x64.zip` archive and extract it.
+2. In a terminal, `cd` into the extracted `ARIA-linux-x64` folder.
+3. Make the launcher executable and run it:
+   ```bash
+   chmod +x ./ARIA
+   ./ARIA
+   ```
+   *(If the window fails to appear on some GPUs, launch with `./ARIA --disable-gpu`.)*
+
+### 🛠️ Build it yourself (cross-platform)
+Requires **Node.js ≥ 18**. From the project root:
+```bash
+npm install
+npm run package:win      # → ARIA-win32-x64.zip
+npm run package:linux    # → ARIA-linux-x64.zip
+npm run package:mac      # → ARIA-darwin-x64.zip
+npm run package          # builds for your current OS
+```
+Each command builds the Vite renderer, packages the Electron app for the chosen OS, obfuscates
+`main.js`, and produces a ready-to-share ZIP in the project root.
 
 
 ---
@@ -262,6 +270,3 @@ To help you get started with zero cost, here are the best ways to obtain free or
 Created with ❤️ by **Mohammed Awais (AM)**.
 
 *This project is distributed for educational and development purposes. Unauthorized modifications of developer attributions or removal of credit signatures are strictly prohibited by the application's built-in self-defense and integrity mechanisms.*
-
-Copyright (c) 2026 Mohammed Awais Hussain. All Rights Reserved.
-Unauthorized copying, modification, or distribution is prohibited.
